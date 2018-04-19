@@ -1,33 +1,179 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Lisa's Cat Page</title>
-  <style>
-      .header{
+    <meta charset="utf-8">
+    <title>Adriel's Homepage</title>
+    <style>
 
-      }
-      body {
-    background-color: lightblue;
+        /* this is where our css rules go */
+        
+        * {
+            color: rgb(216, 213, 213);
+            /* border: 0.5px solid red  */
+        }
+
+        body {
+            background-color: white;
+
+        }
+
+        /* Header/logo Title */
+        .header {
+                padding: 80px;
+                margin: 20px;
+                text-align: center;
+                background: #5eadbb;
+                color: white;
+        }
+
+        /* Increase the font size of the heading */
+        .header h1 {
+        font-size: 40px;
+        }
+
+        .header p {
+            font-size: 20px;
+        }
+
+        /* Style the top navigation bar */
+        .navbar {
+            /* The overflow property specifies what should happen 
+            if content overflows an element's box.
+            could be 'visible', 'scroll' etc. */
+           overflow: hidden;
+        background-color: #333;
+        }
+
+        /* Style the navigation bar links */
+        .navbar a {
+
+            /* The float property can have one of the following values:
+                left - The element floats to the left of its container
+                right- The element floats to the right of its container */
+                float: left;
+
+                /* https://www.w3schools.com/cssref/pr_class_display.asp */
+                display: block;
+
+                color: white;
+                text-align: center;
+                padding: 14px 20px;
+                text-decoration: none;
+        }
+
+            /* Right-aligned link */
+            .navbar a.right {
+                float: right;
+        }
+
+        /* Change color on hover */
+        .navbar a:hover {
+    background-color: #ddd;
+    color: black;
 }
 
-h1 {
-    color: white;
-    text-align: center;
-}
 
-p {
-    font-family: verdana;
-    font-size: 20px;
-}
-  </style>
+
+        h1 {
+            font-size: 28px;
+            text-shadow: 15px 15px red , -15px -15px blue;
+        
+        }
+        
+        h2 {
+            color: blue;
+            padding: 20px;
+            margin: 50px;
+            /* border: 5px  red; */
+            border: solid 10px blue;    
+        }
+
+        p {
+            color: 00ff22;
+        }
+
+        #about-me-paragraph{
+            font-size: 28px;
+        }
+
+        .three-main-paragraphs {
+            font-family: verdana;
+        }
+
+        #doesnt-matter{
+            margin: auto;
+            text-align: center;
+            background-color: darkslategray;
+            width: 85%;
+        }
+
+        #page {
+            margin: auto;
+            text-align: center;
+            background-color: black;
+            width: 90%;
+
+        }
+
+    </style>
+
+
 </head>
-<body>
+
+<body> 
+
     <div class="header">
-        <h1>Lisa DS</h1>
-        <p>This is a story about my cats</p>
+            <h1 id="special-name"> Adriel Arsenault </h1>
+            <p> everything you need to know to give me a job </p>
     </div>
-    <img src="https://raw.githubusercontent.com/veloiste/poechete/master/20180322_125307.jpg" width=500px></img>
+
+    <!-- <div class="navbar">
+            <a href="#">About Me</a>
+            <a href="#">Projects</a>
+            <a href="#">Resume</a>
+            <a href="#" class="right">Contact Me</a>
+    </div> -->
+        
+
+    <div id="page">
+
+    <h2> About Me </h2>
+
+
+    <ol>
+            <li> First thing </li>
+            <li> Second thing </li>
+            <li> Fourth thing </li>    
+    </ol>
+
+    <p id="about-me-paragraph">I'm a Web Developer currently living in Montreal Quebec. <br> Before becoming a programmer I studied physics and literature.
+        In my spare time I like to make music and teach people how to code</p>
+
+    <h2> Skills </h2>
+
+    <p> I'm a Web Developer currently living in Montreal Quebec. 
+        Before becoming a programmer I studied physics and literature.
+        In my spare <em> wowowo </em> I like to make music and teach people how to code! </p>
+    
+    <h2> Skills </h2>
+        
+    <div id=doesnt-matter>
+        <p class="three-main-paragraphs"> My skill include programming in javascript and python,
+            web and software development, and fixing bicycles </p>
+
+        <p class="three-main-paragraphs"> My skill include programming in javascript and python,
+            web and software development, and fixing bicycles </p>
+
+        <p class="three-main-paragraphs"> My skill include programming in javascript and python,
+            web and software development, and fixing bicycles </p>
+    </div>
+
+
+    CSS <br>
+    Javascript <br>
+    Python <br>
+</page>
 </body>
+
 </html>
